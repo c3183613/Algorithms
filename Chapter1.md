@@ -1,18 +1,18 @@
 # Notes
-Input       - Algorithm receives *input*
-Output      - Algorithm produces *output*
-Precision   - The steps are precisely stated
+Input       - Algorithm receives *input*  
+Output      - Algorithm produces *output*  
+Precision   - The steps are precisely stated  
 Determinism - The immediate results of each step of execution are unique and
-are determined only by the inputs and results of the preceding steps
+are determined only by the inputs and results of the preceding steps  
 Finiteness  - The algorithm termintes; i.e. stops after a finite amount of
-instructions
-Correctness - The output produced by the algorithm is correct
+instructions  
+Correctness - The output produced by the algorithm is correct  
 Generality  - The algorithm applies to a set of inputs.
 
 
 # Exercises
 1. Write an algorithm that find the smallest element amount a, b, and c
-```
+```"c++"
 int ReturnSmallest(const int num1, const int num2, const int num3)
 {
     int smallest = num1;
@@ -26,7 +26,7 @@ int ReturnSmallest(const int num1, const int num2, const int num3)
 2. Write an algorithm that finest the second-smallest element amount the
 distinct values a,b, and c
 
-```
+```"c++"
 int SecondSmallest(const int num1, const int num2, const int num3)
 {
     // If two of the three inputs are the same
@@ -53,6 +53,8 @@ int AddTwoNums(const int num1, const int num2)
 ```
 
 4. Which properties of an algorithm - input, output, precision, determinism,
-finiteness, corectness, generality- if any, are lacking in the following?
+finiteness, correctness, generality- if any, are lacking in the following?
 Explain. The input is a set of S integers and an integer m. The ouput is all
 subsets of S that sum to m.
+  1. List all subsets of S and their sums
+  2. Proceed through the subsets listen in step 1 and output each whose sum is m
