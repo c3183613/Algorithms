@@ -127,9 +127,102 @@ void Find_Largest_And_Second_Largest(const int[] array, const int array_size)
 ```
 
 4. Do `3.` for the smallest and second smallest values.
+```"c++"
+void Find_Smallest_And_Second_Smallest(const int[] array, const int array_size)
+{
+    // array_size > 1
+    // values are distinct
+    int smallest_val, second_smallest_val;
+    smallest_val = array[1];
+    for(int array_counter = 2; array_counter <= array_size; array_counter++)
+    {
+        if(array[array_counter] < smallest_val)
+        {
+            second_smallest_val = smallest_val;
+            smallest_val = array[counter];
+        }
+    }
+    std::cout << "Largest: " << smallest_val << std::endl;
+    std::cout << "Second smallest: " << second_smallest_val << std::endl;
+}
+```
 
-5. Write an algorithm that outputs the smallest and largest values in the array s[1], ..., s[n]
+5. Write an algorithm that outputs the smallest and largest values in the array
+s[1], ..., s[n]
+```"c++"
+// edge case exists where array_size >=2 and array[1] and array[2] are the same
+value... I think
+void Find_Largest_And_Smallest(const int[] array, const int array_size)
+{
+    int largest_value, smallest_value;
+    if(array_size < 1)  
+    {
+        // could throw exception
+        std::cout << "Invalid input - invalid array size." << std::endl;
+        return;
+    }
+    else if(array_size == 1)
+    {
+        std::cout << "Largest value: " << largest_value << std::endl;
+        std::cout << "Smallest value: " << smallest_value << std::endl;
+    }
+    else // array_size >= 1
+    {
+        largest_value = array[1];
+        smallest_value = array[2];
+        if(smallest > largest_value)
+        {
+            int temp = smallest;
+            smallest_value = largest_value;
+            largest_value = smallest;
+        }
+        for(int array_counter = 3; array_counter <= array_size; array_counter++)
+        {
+            if(array[array_counter] > largest_value)
+                largest = array[array_counter];
+            else if(array[array_counter] < smallest_value)
+                smallest_value = array[array_counter];
+        }
+        std::cout << "Largest value: " << largest_value << std::endl;
+        std::cout << "Smallest value: " << smallest_value << std::endl;
+    }
+}
+```
 
-6. Write an algorithm that return the index of the first occurence of the largest element in the array s[1], ..., s[n]
+6. Write an algorithm that returns the index of the first occurence of the
+largest element in the array s[1], ..., s[n]
+```"c++"
+int Idx_Largest_Element(const int[] array, const int array_size)
+{
+    int largest_value = array[1];
+    int largest_value_index = 1;
+    for(int array_counter = 1; array_counter <= array_size; array_counter++)
+    {
+        if(array[array_counter] > largest_value)
+        {
+            largest_value = array[array_counter]
+            largest_value_index = array_counter;
+        }
+    }
+    return largest_value_index;
+}
+```
 
-7. Write an algorithm that return the index of the last occurence of the largest element in the array s[1], ..., s[n]
+7. Write an algorithm that return the index of the last occurence of the largest
+element in the array s[1], ..., s[n]
+```"c++"
+int Idx_Largest_Element(const int[] array, const int array_size)
+{
+    int largest_value = array[1];
+    int largest_value_index = 1;
+    for(int array_counter = 1; array_counter <= array_size; array_counter++)
+    {
+        if(array[array_counter] >= largest_value)
+        {
+            largest_value = array[array_counter]
+            largest_value_index = array_counter;
+        }
+    }
+    return largest_value_index;
+}
+```
