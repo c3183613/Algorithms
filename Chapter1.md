@@ -127,3 +127,9 @@ void Find_Largest_And_Second_Largest(const int[] array, const int array_size)
 ```
 
 4. Do `3.` for the smallest and second smallest values.
+
+5. Write an algorithm that outputs the smallest and largest values in the array s[1], ..., s[n]
+
+6. Write an algorithm that return the index of the first occurence of the largest element in the array s[1], ..., s[n]
+
+7. Write an algorithm that return the index of the last occurence of the largest element in the array s[1], ..., s[n]
