@@ -18,5 +18,8 @@ Conjuctive normal form  - `c[1] ^ c[2] ^ c[3]` where each c[i] is of the form
  `p[1] v p[2] v p[3]`
 ->  - boolean implication
 <-> - boolean eqivalence
+### Binomial Coefficients
+nCk - in `n`, choose `k` - n >= k >= 0  - counts the number of k
+elements subsets of an n-element set: (n!)/((n-k)!k!)
 # Exercises
 ## 2.1
