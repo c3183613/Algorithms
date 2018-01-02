@@ -36,7 +36,12 @@ Lower bound - like upper bound, but each element is more greater or equal to `a`
 
 ### Loop invariant and mathematical induction  
 Basis step proves that the invariant is true before the condition that controls
-looping is tested for the first time. 
+looping is tested for the first time.  
+Inductive step assumes invariant is true before condition testing and then
+proves that is the condition that controls the looping is true, the invariant is
+true after the loop body executes. This proves a finite sequence of statements
+is true.
+
 
 # Exercises
 ## 2.1
