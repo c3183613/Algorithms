@@ -201,3 +201,7 @@ structure. In a heap of size `n`, `outof[1]` holds the index of
 key[index_of_biggest_value] where `index_of_biggest_value` is the index of the
 biggest value in `key` and `outof[n]` holds the index of the smallest value in
 `key`
+### Heap sort
+Create a max-heap. Swap first and last node and reduce heap size by 1 by
+reducing the heap array counter. Repeat this step until heap is of size 1. Array
+is now sorted.
